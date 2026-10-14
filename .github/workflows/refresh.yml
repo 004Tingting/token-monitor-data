@@ -1,0 +1,27 @@
+name: refresh-snapshot
+
+on:
+  schedule:
+    - cron: "*/15 * * * *" # 每 15 分钟（UTC）
+  workflow_dispatch: # 手动触发
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: node refresh.mjs # 失败时静默保留旧文件
+      - name: commit if changed
+        run: |
+          git config user.name "004Tingting"
+          git config user.email "SaiKouTING004@outlook.com"
+          git add token-monitor.json
+          if git diff --staged --quiet; then
+            echo "no change, skip commit"
+          else
+            git commit -m "snapshot: $(date -u +%Y-%m-%dT%H:%MZ)"
+            git push
+          fi
