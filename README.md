@@ -7,3 +7,9 @@ Token Monitor hub 的多端用量**快照仓库**——每 15 分钟由 GitHub A
 - **消费方**：① 站点构建 `scripts/fetch-token-stats.mjs`（优先读本仓库，失败才直连 hub）② 访客浏览器（hub 拉取失败时经国内 GitHub 代理读取）
 - **手动刷新**：Actions 页 Manual Run，或本地 `node refresh.mjs` 后提交
 - **失败语义**：hub 拉取失败时保留旧文件、不产生提交（与站点构建的降级路径一致）
+
+## 数据流（脱敏）
+
+![数据流图](docs/data-flow.svg)
+
+两台桌面 widget 各自读取本机 AI 工具用量文件，实时上报 hub；hub 聚合成「今日 / 本月 / 累计」与日月历史序列。GitHub Actions 每 15 分钟把聚合结果拉进本仓库；站点构建优先读本仓库（Contents API），访客浏览器在 hub 拉取失败时经国内代理读本仓库，再失败才用构建快照。全量历史（370 天滚动窗口）由本机每周带密钥导出，提交到站点仓库。
