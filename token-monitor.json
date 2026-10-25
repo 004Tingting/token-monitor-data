@@ -1,21 +1,21 @@
 {
   "source": "token-monitor-hub",
-  "fetchedAt": "2026-10-25T03:19:09.648Z",
-  "hubUpdatedAt": "2026-10-25T03:19:09.453Z",
+  "fetchedAt": "2026-10-25T08:38:28.384Z",
+  "hubUpdatedAt": "2026-10-25T08:38:28.115Z",
   "staleAfterMs": 600000,
   "deviceCount": 2,
   "periods": {
     "today": {
-      "totalTokens": 103018373,
-      "costUsd": 14.153433
+      "totalTokens": 365372982,
+      "costUsd": 45.792652
     },
     "month": {
-      "totalTokens": 6353313136,
-      "costUsd": 278.18883
+      "totalTokens": 6619309185,
+      "costUsd": 310.031477
     },
     "allTime": {
-      "totalTokens": 10706547731,
-      "costUsd": 363.263359
+      "totalTokens": 10972756117,
+      "costUsd": 395.181524
     }
   },
   "daily": [
@@ -189,15 +189,15 @@
     },
     {
       "date": "2026-10-24",
-      "tokens": 584405070,
-      "cost": 41.263770214000004,
-      "activeTimeMs": 51633253
+      "tokens": 586995023,
+      "cost": 41.38546075400001,
+      "activeTimeMs": 51789173
     },
     {
       "date": "2026-10-25",
-      "tokens": 103018373,
-      "cost": 14.15343336,
-      "activeTimeMs": 6720154
+      "tokens": 347207472,
+      "cost": 44.35454530999999,
+      "activeTimeMs": 35745218
     }
   ],
   "monthly": [
@@ -221,9 +221,9 @@
     },
     {
       "month": "2026-10",
-      "tokens": 6353350234,
-      "cost": 282.33186812864,
-      "activeTimeMs": 533469883
+      "tokens": 6600129286,
+      "cost": 312.65467061864,
+      "activeTimeMs": 562650867
     }
   ]
 }
