@@ -1,13 +1,13 @@
 {
   "source": "token-monitor-hub",
-  "fetchedAt": "2026-11-14T10:57:14.741Z",
-  "hubUpdatedAt": "2026-11-14T10:57:14.520Z",
+  "fetchedAt": "2026-11-14T16:53:56.471Z",
+  "hubUpdatedAt": "2026-11-14T16:53:56.236Z",
   "staleAfterMs": 600000,
   "deviceCount": 2,
   "periods": {
     "today": {
-      "totalTokens": 553349808,
-      "costUsd": 21.628394
+      "totalTokens": 0,
+      "costUsd": 0
     },
     "month": {
       "totalTokens": 5837563971,
