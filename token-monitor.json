@@ -1,21 +1,21 @@
 {
   "source": "token-monitor-hub",
-  "fetchedAt": "2026-11-14T03:35:15.867Z",
-  "hubUpdatedAt": "2026-11-14T03:35:15.745Z",
+  "fetchedAt": "2026-11-14T10:57:14.741Z",
+  "hubUpdatedAt": "2026-11-14T10:57:14.520Z",
   "staleAfterMs": 600000,
   "deviceCount": 2,
   "periods": {
     "today": {
-      "totalTokens": 553064189,
-      "costUsd": 21.585812
+      "totalTokens": 553349808,
+      "costUsd": 21.628394
     },
     "month": {
-      "totalTokens": 5837278352,
-      "costUsd": 273.945776
+      "totalTokens": 5837563971,
+      "costUsd": 273.988358
     },
     "allTime": {
-      "totalTokens": 19481010972,
-      "costUsd": 725.937146
+      "totalTokens": 19481296591,
+      "costUsd": 725.979728
     }
   },
   "daily": [
